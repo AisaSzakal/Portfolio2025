@@ -1,0 +1,146 @@
+/* Reset Default Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ffff;
+    font-family: 'Martian Mono', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Fix Header Position */
+header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff; /* Prevents transparency */
+    z-index: 1000; /* Ensures it's above other elements */
+}
+
+/* Email on Top Left */
+.mail {
+    font-size: 14px;
+    color: #111010;
+    font-weight: bold;
+    margin-left: 2%;
+    font-family:'Martian Mono', sans-serif;
+}
+
+/* Navigation on Top Right */
+.navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right: 2%;
+}
+
+/* Navigation Item */
+.nav-item {
+    cursor: pointer;
+    font-size: 24px;
+    font-family: 'East Sea Dokdo', cursive;
+    color: #991F0F;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-item:hover {
+    color: black;
+}
+
+/* Center Content */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mess {
+    font-family: 'East Sea Dokdo', sans-serif;
+    font-size: 45px;
+    color: #991F0F;
+}
+
+a{
+    font-family: 'Martian Mono', sans-serif;
+    font-size: 24px;
+    padding-bottom: 20px;
+    color: #111010;
+    text-decoration: none;
+    
+}
+
+
+/* Fade-in Effect */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+
+
+
+ /* -------- responsive ----------- */
+
+ @media only screen and (max-width: 900px) {
+    .title{
+        font-size: 45px;
+    }
+    a{
+        font-size: 18px;
+    }
+    
+.mail{
+        font-size: 14px;
+    }
+    
+    /* Navigation Item */
+    .nav-item {
+        font-size: 16px;
+    }
+    
+      }
+
+    
+      @media only screen and (max-width: 600px) {
+        .title{
+            font-size: 32px;
+        }
+        a{
+            font-size: 14px;
+        }
+
+        .mail{
+            font-size: 8px;
+    
+        }
+        .nav-item {
+            font-size: 14px;
+        }
+        .header{
+            padding: 10px;
+        }
+      }

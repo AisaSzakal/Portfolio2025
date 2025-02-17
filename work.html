@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="styles3.css" type="text/css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Martian Mono' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=East Sea Dokdo' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Slideshow</title>
+</head>
+<body>
+
+<header>
+    <div class="mail">
+        <h2>aisaszakal@gmail.com</h2>
+    </div>
+    <div class="title">
+        <h2>My projects!</h2>
+    </div>
+    <div class="navigation">
+        <div class="nav-item" onclick="window.location.href='index.html'">
+            <h2>HOME</h2>
+        </div>
+        <div class="nav-item" onclick="window.location.href='contact.html'">
+            <h2>CONTACT</h2>
+        </div>
+    </div>
+</header>
+
+<!-- Slideshow container -->
+<div class="slideshow-container">
+    <div class="slide active">
+        <img class="desktop-img" src="assets/poster1.png" alt="Poster 1">
+        <img class="mobile-img" src="assets/posterphone1.png" alt="Mobile Poster 1">
+        <div class="video-container">
+            <iframe width="400" height="213" src="https://youtube.com/embed/mOlGmwbNGhI" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="slide">
+        <img class="desktop-img" src="assets/poster2.png" alt="Poster 1">
+        <img class="mobile-img" src="assets/posterphone2.png" alt="Mobile Poster 1">
+        <div class="video-container">
+            <iframe width="400" height="213" src="https://www.youtube.com/embed/n6GvlhkhemM" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="slide">
+        <img class="desktop-img" src="assets/poster3.png" alt="Poster 1">
+        <img class="mobile-img" src="assets/posterphone3.png" alt="Mobile Poster 1">
+        <div class="video-container">
+            <iframe width="400" height="213" src="https://www.youtube.com/embed/uYF0iFHz5Wo" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="slide">
+        <img class="desktop-img" src="assets/poster4.png" alt="Poster 1">
+        <img class="mobile-img" src="assets/posterphone4.png" alt="Mobile Poster 1">
+        <div class="video-container">
+            <iframe width="400" height="213" src="https://www.youtube.com/embed/mOhI" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="slide">
+        <img class="desktop-img" src="assets/poster5.png" alt="Poster 1">
+        <img class="mobile-img" src="assets/posterphone5.png" alt="Mobile Poster 1">
+        <div class="video-container">
+            <iframe width="400" height="213" src="https://youtube.com/embed/VYaBeOiDNEo" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+
+<!-- Navigation Arrows -->
+<div class="controls">
+    <button class="prev" onclick="changeSlide(-1)">&lt;-</button>
+    <button class="next" onclick="changeSlide(1)">-&#62;</button>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+
